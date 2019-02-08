@@ -1,6 +1,6 @@
 const display = document.querySelector('.calculator input[name=display]');
 
-document.querySelectorAll('.digits, .opers').forEach(btn => btn.addEventListener('click', digitOperPressed));
+document.querySelectorAll('.digits button, .opers button').forEach(btn => btn.addEventListener('click', digitOperPressed));
 
 function digitOperPressed(e) {
     let disArr = display.value.split('');
